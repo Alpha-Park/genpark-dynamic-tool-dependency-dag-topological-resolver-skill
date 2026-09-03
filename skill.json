@@ -1,0 +1,36 @@
+{
+  "name": "genpark-dynamic-tool-dependency-dag-topological-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic multi-tool execution dependency DAG topological sorter identifying parallel execution batches and circular locks.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "multi-agent-swarms",
+  "tags": [
+    "dag-planner",
+    "topological-sort",
+    "function-calling",
+    "semantic-kernel",
+    "tool-execution"
+  ],
+  "inputs": {
+    "tool_declarations": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "dag_resolution_id": {
+      "type": "string"
+    },
+    "topologically_sorted_execution_stages": {
+      "type": "array"
+    },
+    "circular_dependency_detected": {
+      "type": "boolean"
+    },
+    "dag_visual_graph_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
